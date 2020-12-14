@@ -6,8 +6,8 @@ Background:
 	
 @SmokeTest 
 Scenario Outline: Verify the user is able to login the application 
-	
-	Given User enter the valid "<userName>" in the user name field 
+	When User login the page
+	And User enter the valid "<userName>" in the user name field 
 	And User enter the valid "<password>" in the password field 
 	And User clicks on the login button 
 	Then User verifies whether Home Page navigates to search Hotel page 
@@ -17,7 +17,8 @@ Scenario Outline: Verify the user is able to login the application
 		|AAA|111|
 		|BBB|222|
 		|ShermilyU|Newdayma@123|
-		
+
+@RegressionTest	
 		Scenario: Verify the user is able to search for hotel 
 		
 			When User enters the "Sydney" as "text" 
@@ -29,6 +30,7 @@ Scenario Outline: Verify the user is able to login the application
 			And User clicks the search button 
 			Then User verifies whether Search Hotel page navigates to select Hotel page 
 			
+@SanityTest
 		Scenario: Verify the user selects the hotel 
 			When User selects the hotel available 
 			And User clicks the continue button 
