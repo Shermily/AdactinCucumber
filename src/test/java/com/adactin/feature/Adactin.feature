@@ -18,7 +18,7 @@ Scenario Outline: Verify the user is able to login the application
 		|BBB|222|
 		|ShermilyU|Newdayma@123|
 
-@RegressionTest	
+	
 		Scenario: Verify the user is able to search for hotel 
 		
 			When User enters the "Sydney" as "text" 
@@ -30,7 +30,7 @@ Scenario Outline: Verify the user is able to login the application
 			And User clicks the search button 
 			Then User verifies whether Search Hotel page navigates to select Hotel page 
 			
-@SanityTest
+
 		Scenario: Verify the user selects the hotel 
 			When User selects the hotel available 
 			And User clicks the continue button 

@@ -85,7 +85,7 @@ public class StepDefinition extends BaseClass {
 	@Then("^User verifies whether Home Page navigates to search Hotel page$")
 	public void user_verifies_whether_Home_Page_navigates_to_search_Hotel_page() throws Throwable {
 		//validation
-		//Assert.assertEquals("A", "a");
+		Assert.assertEquals("A", "a");
 	}
 
 	@When("^User enters the \"([^\"]*)\" as \"([^\"]*)\"$")
@@ -152,7 +152,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^User verifies whether Select Hotel page navigates to Book Hotel$")
 	public void user_verifies_whether_Select_Hotel_page_navigates_to_Book_Hotel() throws Throwable {
-		//Assert.assertEquals("D", "d");
+		Assert.assertEquals("D", "d");
 	}
 
 	@When("^User enters a \"([^\"]*)\" name$")

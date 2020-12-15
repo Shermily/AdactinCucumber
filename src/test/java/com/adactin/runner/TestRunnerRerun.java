@@ -11,9 +11,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features="@Report/FailedScenario.txt",
 							glue="com\\adactin\\stepdefinition",
 							plugin= {/*"pretty","html:Report/CucumberReport","json:Report/Cucumber.json",*/
-									"com.cucumber.listener.ExtentCucumberFormatter:Report3/CucumberExtentReport3.html",
+									"com.cucumber.listener.ExtentCucumberFormatter:Report3/CucumberExtentReport.html",
 									"rerun:Report/FailedScenario.txt"},
-							//tags = {"@SmokeTest"},
+							tags = {"@SmokeTest"},
 							monochrome=true,
 							dryRun = false,
 							strict = true)
