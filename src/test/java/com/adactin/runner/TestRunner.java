@@ -19,7 +19,7 @@ import cucumber.api.junit.Cucumber;
 							plugin= {/*"pretty","html:Report/CucumberReport","json:Report/Cucumber.json",*/
 									"com.cucumber.listener.ExtentCucumberFormatter:Report/CucumberExtentReport.html",
 									"rerun:Report/FailedScenario.txt"},
-							tags = {"@SmokeTest"},
+							//tags = {"@SmokeTest"},
 							monochrome=true,
 							dryRun = false,
 							strict = true)
