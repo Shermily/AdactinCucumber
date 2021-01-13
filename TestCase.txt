@@ -3,10 +3,9 @@ TC 002
 TC 003
 TC 004
 
-<<<<<<< HEAD
 TC 005
 TC 006
-=======
+
 TC 007
 TC 008
->>>>>>> NewBranch
+
